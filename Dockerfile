@@ -111,6 +111,7 @@ RUN packages="                                               \
                                                              \
     apt-get update                                        && \
     apt-get install -y --no-install-recommends $packages  && \
+    apt-get install jackd2                                && \
     apt-get -y --purge autoremove                         && \
     rm -rf /var/lib/apt/lists/*
 
